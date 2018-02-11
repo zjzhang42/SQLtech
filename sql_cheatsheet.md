@@ -1,4 +1,4 @@
-## Summary of SQL commands
+## SQL Cheatsheet
 - Insert rows (`INSERT INTO`): `INSERT INTO table (headers...) VALUES (values...[row1]), (values...[row2]), ..., (values...[rown]);`.
 - Select (and Display) rows (`SELECT`): `SELECT * FROM table;`, `SELECT col_i, col_j FROM table;` (i is not necessarily smaller than j).
 - Select unique rows (`DISTINCT`): `SELECT DISTINCT col_i, col_j FROM table;`.
