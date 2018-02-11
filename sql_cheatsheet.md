@@ -1,4 +1,13 @@
 ## Summary of SQL commands
-- Insert rows into a table: `INSERT INTO table (headers...) VALUES (values...[row1]), (values...[row2]), ..., (values...[rown])`
-- Select rows from a table: `SELECT * FROM table`, `SELECT col_i, col_j FROM table` (not necessary for i<j)
-- Select unique rows from a table: `SELECT DISTINCT col_i, col_j FROM table`
+- Insert rows (`INSERT INTO`): `INSERT INTO table (headers...) VALUES (values...[row1]), (values...[row2]), ..., (values...[rown]);`.
+- Select (and Display) rows (`SELECT`): `SELECT * FROM table;`, `SELECT col_i, col_j FROM table;` (i is not necessarily smaller than j).
+- Select unique rows (`DISTINCT`): `SELECT DISTINCT col_i, col_j FROM table;`.
+- Select subsets (`WHERE`): `SELECT col_i, col_j FROM table WHERE col_k=0;`, conditions combined with "AND" & "OR".
+- Sort rows (`ORDER BY`): `SELECT col_i, col_j FROM table ORDER BY col_i DESC, col_j ASC;`, rows are sorted based on col_i (descending) and then sorted by col_j (ascending, as default) for the same col_i.
+- Update values (`UPDATE`): `UPDATE table SET col_i='new_value' WHERE col_i='old_value';`.
+- Delete rows (`DELETE`): `DELETE FROM table WHERE col_i='del_value';`.
+- Limit results within X rows (`LIMIT`): `SELECT * FROM table LIMIT X;`.
+- Check missing data by using the condition of `IS NULL` and `IS NOT NULL`.
+- Loose conditions (`LIKE`): `SELECT * FROM table WHERE col_i LIKE` `'42%';`/`% _. %;`, where `%` is any series of zero or more characters, `_` is any single character.
+- Function Substring (`SUBSTR(STRING, START_POINT, LENGTH)`)
+- Function 
