@@ -1,4 +1,4 @@
-## Answer of Q175 - Second Highest Salary
+## Answer of Q176 - Second Highest Salary
 The answer is simply as below:
 ```
 SELECT 
